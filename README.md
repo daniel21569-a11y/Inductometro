@@ -8,10 +8,13 @@ Este proyecto implementa un inductómetro digital profesional utilizando un **ST
 - **Driver de Corriente NPN:** Incluye un diseño con transistor BC549 para permitir la medida de bobinas con muy baja resistencia interna (DCR).
 - **Sistema de Diagnóstico "Eco":** Informa sobre el factor de calidad (Q) y la resistencia interna de la bobina basándose en el decaimiento de la oscilación.
 - **Detección Automática:** Avisa si la bobina no es medible o si hay un circuito abierto.
+- **Interfaz Visual:** Pantalla LCD 16x2 con adaptador I2C para lectura en tiempo real.
 
-## 🛠️ Hardware: Transistor Driver
-Para obtener resultados precisos, este software requiere un pequeño circuito externo:
-- **Transistor:** BC549B (o similar).
+## 🛠️ Hardware: Componentes base
+Para obtener resultados precisos, este software requiere:
+- **Microcontrolador:** STM32F411CE (Black Pill).
+- **Pantalla:** LCD 16x2 con módulo I2C (PCF8574).
+- **Transistor Driver:** BC549B (o similar).
 - **Pin de Pulso:** `PA1` (con resistencia de 1k a la base).
 - **Pin de Medida:** `PA0` (conectado al colector y al tanque LC).
 - **Tanque LC:** Bobina bajo prueba en paralelo con un condensador de **0.968 nF**.
