@@ -3,7 +3,6 @@
 #include <Wire.h>
 #include <algorithm>
 
-
 LiquidCrystal_I2C lcd(0x3F, 16, 2);
 
 const int transistorPin = PA1;

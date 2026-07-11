@@ -7,3 +7,8 @@
 *.elf
 *.map
 node_modules/
+
+# KiCad generated/local files
+*-backups/
+fp-info-cache
+*.kicad_prl
